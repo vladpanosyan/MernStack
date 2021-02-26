@@ -1,0 +1,27 @@
+{
+  "name": "minin",
+  "version": "1.0.0",
+  "description": "Mern Stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "keywords": [
+    "mern"
+  ],
+  "author": "Volodya Panosyan <vlp>",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.18",
+    "mongoose-unique-validator": "^2.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0"
+  }
+}
