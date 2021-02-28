@@ -26,7 +26,6 @@ class UserService {
         const candidate = await this.model.findOne({ email });
         if (candidate && this.model.validPassword(password, candidate.password)) {
             const token = new CreateJWT({userId: candidate.id}).createToken()
-            console.log(token)
             return {
                 error: false,
                 statusCode: 200,

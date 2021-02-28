@@ -8,7 +8,6 @@ module.exports = class ServiceFactory {
     create() {
         const SERVICES = {};
         let modelNames = Object.keys(this.models)
-        // console.log(modelNames, 444)
         for(let model of modelNames) {
             SERVICES[model] = new services[model](this.models[model]);
         }
